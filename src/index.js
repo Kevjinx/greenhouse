@@ -10,12 +10,13 @@ import ClimateProvider from './context/ClimateContext';
 
 function Root() {
   return (
+
     <ThemeProvider>
-        <ClimateProvider>
-          <BrowserRouter>
-            <App />
-          </BrowserRouter>
-        </ClimateProvider>
+      <ClimateProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </ClimateProvider>
     </ThemeProvider>
   );
 }

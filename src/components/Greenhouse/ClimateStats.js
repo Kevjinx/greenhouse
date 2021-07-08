@@ -1,14 +1,18 @@
 import './ClimateStats.css';
+import { useClimate } from '../../context/ClimateContext'
+
 
 function ClimateStats() {
+
+  const { humidity, climate }  = useClimate()
 
   return (
     <div className="climate-stats">
       <div className="temperature">
-        Temperature {"x"}°F
+        Temperature {climate}°F
       </div>
       <div className="humidity">
-        Humidity {"y"}%
+        Humidity {humidity}%
       </div>
     </div>
   )
