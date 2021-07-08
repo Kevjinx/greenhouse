@@ -19,7 +19,7 @@ function Thermometer() {
     }
   }, [climate, thermostat])
 
-
+//s
   return (
     <section>
       <h2>Thermometer</h2>
